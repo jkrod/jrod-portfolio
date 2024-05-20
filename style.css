@@ -1,4 +1,5 @@
 :root {
+  /* Colors */
   --clr-accent-400: hsl(12, 88%, 59%);
   --clr-accent-100: hsl(13, 100%, 96%);
 
@@ -6,6 +7,43 @@
 
   --clr-neutral-100: hsl(232, 12%, 13%);
   --clr-neutral-900: hsl(0 0% 0%);
+
+  --clr-error-400: hsl(0, 100%, 63%);
+
+  /* Fonts */
+  --ff-primary: 'Roboto Slab', serif;
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-light: 300;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* Spacings */
+  --fs-300: 0.75rem;
+  --fs-400: 0.875rem;
+  --fs-500: 1rem;
+  --fs-600: 1.25rem;
+  --fs-700: 2.5rem;
+  --fs-900: 3.5rem;
+
+  --fs-body: var(--fs-500);
+  --fs-nav: var(--fs-600);
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    /* Spacings */
+    --fs-300: 1rem;
+    --fs-400: 1.125rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.5rem;
+    --fs-700: 3rem;
+    --fs-900: 4rem;
+
+    --fs-body: var(--fs-600);
+    --fs-nav: var(--fs-500);
+  }
 }
 
 /* AUTO GENERATED CSS Reset BELOW.
@@ -217,4 +255,9 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
+}
+
+/* Navigation */
+.nav-list {
+  font-size: var(--fs-nav);
 }
